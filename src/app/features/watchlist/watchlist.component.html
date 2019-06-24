@@ -1,0 +1,9 @@
+<div *ngIf="(postList$ | async).length > 0; else emptyTemplate">
+  <app-postwrapper *ngFor="let post of (postList$ | async)" [post]="post"> </app-postwrapper>
+</div>
+
+<ng-template #emptyTemplate>
+  <div class="container">
+    <i class="far fa-frown-open"></i><span>No posts found.</span>
+  </div>
+</ng-template>

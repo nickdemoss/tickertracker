@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="top-content">
+      <div class="category p-2">
+          <span>b/{{post.category}}</span>
+      </div>
+      <div class="author p-2">
+          <span>Posted by {{post.author}}</span><span style="font-size: 20; font-weight: bolder"> @ </span>
+          <span>{{post.createTimestamp | date:'short'}}</span>
+      </div>
+  </div>
+  <div class="bottom-content">
+      <div class="title p-2">
+          <span>{{post.title}}</span>
+      </div>
+  </div>
+</div>
